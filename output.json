@@ -1,0 +1,1 @@
+{"endpoint": "https://httpbin.org/status/200", "response_status": "OK", "avg_response_time": 0.06711831033333333, "successful_requests": 3, "failed_requests": 0}

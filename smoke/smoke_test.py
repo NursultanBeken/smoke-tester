@@ -18,16 +18,9 @@ def fetch(url, timeout):
             url,
             timeout=timeout)
         status_code = response.status_code    
-        # if status_code in range(200, 299):
-        #     response_status = "OK"
-        # else:
-        #     response_status = "FAILED"
     except Timeout:
-        # print(f'The request timed out after {timeout}s')
-        # response_status = "FAILED"
         status_code = 408
     except requests.exceptions.ConnectionError as ce:
-        # response_status = "FAILED"
         status_code = 503
     except requests.exceptions.RequestException as e:
         raise SystemExit(e)

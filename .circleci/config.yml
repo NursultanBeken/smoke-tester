@@ -19,7 +19,9 @@ jobs:
             - "venv"
       - run:
           name: run unit tests
-          command: make test
+          command: |
+            . venv/bin/activate
+            make test
       - store_test_results:
           path: reports
 

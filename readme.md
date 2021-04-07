@@ -1,5 +1,7 @@
 # Smoke test engine
 
+[![CircleCI](https://circleci.com/gh/NursultanBeken/smoke-tester.svg?style=svg)](https://circleci.com/gh/NursultanBeken/smoke-tester)
+
 What we want to test and how:
  - Check response status code
  - Check that response time is below a threshold
@@ -29,3 +31,9 @@ Example execute:
 ```
 python -m smoke.cli https://httpbin.org/status/200 -t 2 -r 3 -j output.json
 ```
+
+### TO_DO: 
+* pull URL from Mongo DB
+* set a cron job to run the smoke-test
+* write result back to DB
+* dockerize the app

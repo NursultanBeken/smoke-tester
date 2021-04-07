@@ -13,6 +13,6 @@ lint:
 	pylint --disable=R,C,W ${SRC}/smoke/*.py
 
 test:
-	python -m pytest -s -vvv tests/
+	python -m pytest -s -vvv tests/ --junitxml=reports/unit.xml
 
 all: lint test

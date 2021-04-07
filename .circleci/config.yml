@@ -21,6 +21,9 @@ jobs:
           name: run unit tests
           command: |
             . venv/bin/activate
+            which python
+            mkdir reports
+            ls -la
             make test
       - store_test_results:
           path: reports

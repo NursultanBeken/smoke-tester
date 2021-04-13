@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.8
+      - image: mongo:4.4.4
     steps:
       - checkout
       - restore_cache:
